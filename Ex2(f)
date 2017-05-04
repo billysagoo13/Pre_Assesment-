@@ -1,0 +1,15 @@
+package cinema;
+
+public class Student implements familyMember { //Student cost 6 dollars (This layout is the same for all the other classes that implement familyMember)
+	   final int COST = 6;
+	   @Override
+	   public int getCost(){ // getting the cost of the student
+	      return COST;
+	   }
+	   @Override
+	   public String toString(){ // this method is used later when we're printing family members
+	      return "Student";
+	   }
+
+
+	}

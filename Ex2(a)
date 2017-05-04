@@ -1,0 +1,27 @@
+package cinema;
+import java.util.*;
+public class Family{
+   ArrayList<familyMember> family = new ArrayList<familyMember>();
+   boolean wednesday = false;
+   int cost = 0;
+   public Family(ArrayList<familyMember> list, boolean isWed){ //constructor with all the family members in an arraylist and a boolean for if its wednesday
+         family = list;
+         wednesday = isWed;
+   }
+   public int getTotalCost(){ //iterating through the entire family and getting the cost for each
+      for(int i=0; i<family.size(); i++){
+         if(!wednesday)
+            cost+=family.get(i).getCost();
+         else
+            cost+=family.get(i).getCost() - 2;
+      }
+      return cost;
+   }
+   public void print(){ // function to print the family members and total cost
+      System.out.println("Family Members: ");
+      for(int i=0; i<family.size(); i++){
+         System.out.println(family.get(i).toString());
+      }
+      System.out.println("Total Cost:£ "+getTotalCost());
+   }
+}

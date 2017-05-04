@@ -1,3 +1,5 @@
+package cinema;
+
 public class Child implements familyMember {
 	   final int COST = 4;
 	   @Override

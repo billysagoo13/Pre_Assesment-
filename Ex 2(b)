@@ -1,0 +1,9 @@
+package cinema;
+
+
+
+public interface familyMember{ //Interface which all the other classes will implement
+   public abstract int getCost();
+   public abstract String toString();
+
+}

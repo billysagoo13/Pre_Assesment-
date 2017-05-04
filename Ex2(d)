@@ -1,0 +1,15 @@
+package cinema;
+
+public class OAP implements familyMember {
+	   final int COST = 6;
+	   @Override
+	   public int getCost(){
+	      return COST;
+	   }
+	   @Override
+	   public String toString(){
+	      return "Old Aged Pensioner";
+	   }
+
+
+	}

@@ -1,5 +1,5 @@
 # Pre_Assesment-
-Ex1 &amp; Ex2 
+Ex2 (Main.java Class)
 
 import java.util.*;
 public class main{

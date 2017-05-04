@@ -1,0 +1,14 @@
+public class Child implements familyMember {
+	   final int COST = 4;
+	   @Override
+	   public int getCost(){
+	      return COST;
+	   }
+	   @Override
+	   public String toString(){
+	      return "Child";
+	   }
+
+
+	}
+

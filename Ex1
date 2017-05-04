@@ -1,0 +1,79 @@
+Encapsulation
+Example of Encapsulation: Encapsulation is the art of protecting your data by setting instance variables as private. Therefore, the only way to access the variables is through getters and setters.
+public class EncapTest {
+   private String name;
+   private String idNum;
+   private int age;
+
+   public int getAge() {
+      return age;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public String getIdNum() {
+      return idNum;
+   }
+
+   public void setAge( int newAge) {
+      age = newAge;
+   }
+
+   public void setName(String newName) {
+      name = newName;
+   }
+
+   public void setIdNum( String newId) {
+      idNum = newId;
+   }
+}
+
+Inheritance 
+The class from which the subclass is derived is called a superclass (also a base class or a parent class). Excepting Object , which has no superclass, every class has one and only one direct superclass (single inheritance). A subclass inherits all the members (fields, methods, and nested classes) from its superclass.
+Example of inheritance: 
+class Vehicle {
+   String color;
+   int speed;
+   int size;
+   void attributes() {
+      System.out.println("Color : " + color);
+      System.out.println("Speed : " + speed);
+      System.out.println("Size : " + size);
+   }
+}
+
+// A subclass which extends for vehicle
+class Car extends Vehicle {
+   int CC;
+   int gears;
+   void attributescar() {
+      // The subclass refers to the members of the superclass
+      System.out.println("Color of Car : " + color);
+      System.out.println("Speed of Car : " + speed);
+      System.out.println("Size of Car : " + size);
+      System.out.println("CC of Car : " + CC);
+      System.out.println("No of gears of Car : " + gears);
+   }
+}
+
+Polymorphism
+Example of Polymorphism:
+The program developed in Ex2 is a great example of polymorphism, more notably in the Family.java class. It’s basically when you have an interface and a bunch of child classes implementing that interface. Now I can create an arraylist of that interface and add all the childclasses that implement the interface into it. With this, I can access the interface methods because all the childclasses have those methods as well. 
+
+
+
+
+
+Abstraction  
+Example of abstraction:
+public abstract class Employee {
+   private String name;
+   private String address;
+   private int number;
+   
+   public abstract double computePay();
+   // Remainder of class definition
+}
+Abstract methods are methods that are not implemented in the class. This is useful for data hiding when you don’t want people to see how you’ve implemented the method.

@@ -11,6 +11,5 @@ public class Child implements familyMember {
 	      return "Child";
 	   }
 
-
 	}
 

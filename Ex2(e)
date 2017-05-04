@@ -1,0 +1,15 @@
+package cinema;
+
+public class Standard implements familyMember {
+	   final int COST = 8;
+	   @Override
+	   public int getCost(){
+	      return COST;
+	   }
+	   @Override
+	   public String toString(){
+	      return "Standard";
+	   }
+
+
+	}
